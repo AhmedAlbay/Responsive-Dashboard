@@ -69,7 +69,7 @@ class ActiveAllExpenessItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: ShapeDecoration(
-        color: Color(0xff4EB7F2),
+        color: const Color(0xff4EB7F2),
         shape: RoundedRectangleBorder(
           side: const BorderSide(
             width: 1,
@@ -83,7 +83,7 @@ class ActiveAllExpenessItem extends StatelessWidget {
         children: [
           AllExpenessItemHeader(
             iconcolor: Colors.white,
-            imageBackground: Color.fromRGBO(255, 255, 255, 0.1),
+            imageBackground: const Color.fromRGBO(255, 255, 255, 0.1),
             imagecolor: Colors.white,
             image: allExpenessItemModel.image,
           ),
@@ -97,7 +97,7 @@ class ActiveAllExpenessItem extends StatelessWidget {
           ),
           Text(allExpenessItemModel.date,
               style: AppStyle.styleRegular14.copyWith(
-                color: Color.fromRGBO(250, 250, 250, 1),
+                color: const Color.fromRGBO(250, 250, 250, 1),
               )),
           const SizedBox(
             height: 16,

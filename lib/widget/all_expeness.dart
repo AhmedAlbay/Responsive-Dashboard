@@ -8,10 +8,8 @@ class AllExpeness extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(20),
-      child: CustomBackgroundContainer(
-        child: Column(
+    return const CustomBackgroundContainer(
+      child: Column(
         children: [
           AllExpenessHeader(),
           SizedBox(
@@ -20,8 +18,6 @@ class AllExpeness extends StatelessWidget {
           AllExpenessItemListView()
         ],
       ),
-      ),
     );
   }
 }
-
