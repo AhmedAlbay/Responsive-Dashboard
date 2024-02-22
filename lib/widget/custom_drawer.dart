@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:responsivedashboard/model/drawer_item_model.dart';
 import 'package:responsivedashboard/utils/app_image.dart';
+import 'package:responsivedashboard/view/user_info_model.dart';
 import 'package:responsivedashboard/widget/custom_user_info.dart';
 import 'package:responsivedashboard/widget/drawer_item_list_view.dart';
 import 'package:responsivedashboard/widget/inactive_active_drawer_item.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
-
+ 
   @override
   Widget build(BuildContext context) {
     return Container(
         color: Colors.white,
-        child: const CustomScrollView(
+        child:  const CustomScrollView(
           slivers: [
             SliverToBoxAdapter(
               child: CustomUserInfo(
-                  image: Assets.imagesFrame,
-                  title: "Lekan Okeowo",
-                  subtitle: "demo@gmail.com"),
+                userInfoModel: UserInfoModel(image:  Assets.imagesFrame, title: "Lekan Okeowo", subtitle: "demo@gmail.com",),
+              )
             ),
             SliverToBoxAdapter(
               child: SizedBox(
