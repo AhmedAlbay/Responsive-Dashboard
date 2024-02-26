@@ -11,15 +11,15 @@ class TransactionHistory extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TransactionHistoryHeader(),
-        SizedBox(
+        const TransactionHistoryHeader(),
+        const SizedBox(
           height: 20,
         ),
         Text(
           "13 April 2022",
-          style: AppStyle.styleMeduim16.copyWith(color: Color(0xffAAAAAA)),
+          style: AppStyle.styleMeduim16.copyWith(color: const Color(0xffAAAAAA)),
         ),
-        TransactionHistoryListView(),
+        const TransactionHistoryListView(),
       ],
     );
   }

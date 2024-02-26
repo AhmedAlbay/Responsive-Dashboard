@@ -14,14 +14,14 @@ class AllExpenessItemHeader extends StatelessWidget {
           width: 60,
           height: 60,
           decoration: ShapeDecoration(
-            shape: OvalBorder(),
-            color: imageBackground ?? Color(0xffFAFAFA),
+            shape: const OvalBorder(),
+            color: imageBackground ?? const Color(0xffFAFAFA),
           ),
           child: Center(
               child: SvgPicture.asset(
             image,
             colorFilter: ColorFilter.mode(
-                imagecolor ?? Color(0xff4EB7F2), BlendMode.srcIn),
+                imagecolor ?? const Color(0xff4EB7F2), BlendMode.srcIn),
           )),
         ),
         const Spacer(),
@@ -29,7 +29,7 @@ class AllExpenessItemHeader extends StatelessWidget {
           angle: -1.57079633 * 2,
           child:  Icon(
             Icons.arrow_back_ios_new_outlined,
-            color:iconcolor??  Color(0xff064060),
+            color:iconcolor??  const Color(0xff064060),
           ),
         ),
       ],
