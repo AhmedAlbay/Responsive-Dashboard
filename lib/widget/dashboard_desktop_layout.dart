@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsivedashboard/widget/allexpeness_and_quickinvoice_section.dart';
-import 'package:responsivedashboard/widget/custom_dot_indicator.dart';
 import 'package:responsivedashboard/widget/custom_drawer.dart';
-import 'package:responsivedashboard/widget/dot_indicator.dart';
-import 'package:responsivedashboard/widget/my_card.dart';
-import 'package:responsivedashboard/widget/my_card_page_view.dart';
-import 'package:responsivedashboard/widget/my_cards_section.dart';
+import 'package:responsivedashboard/widget/income_section.dart';
+import 'package:responsivedashboard/widget/mycard_and_transaction_history_secation.dart';
 
 class DashBoardDesktopLayout extends StatelessWidget {
   const DashBoardDesktopLayout({super.key});
@@ -18,14 +15,25 @@ class DashBoardDesktopLayout extends StatelessWidget {
         SizedBox(
           width: 20,
         ),
-        Expanded(flex: 2, child: AllExpenessAndQuickInoiveSection()),
+        Expanded(flex: 3, child: AllExpenessAndQuickInoiveSection()),
         SizedBox(
           width: 24,
         ),
         Expanded(
-          child: MyCardsSection(),
+          flex: 2,
+          child: Column(
+            children: [
+              MyCardAndTransactionHistorySection(),
+              SizedBox(
+                height: 24,
+              ),
+              Expanded(
+                child: IncomeSection(),
+              ),
+            ],
+          ),
         ),
       ],
     );
   }
-}
+
