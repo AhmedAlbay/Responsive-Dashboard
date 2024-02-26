@@ -18,7 +18,10 @@ class DashBoardTabletLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 3,
-          child: DashBoardMobileLayout(),
+          child: Padding(
+            padding: EdgeInsets.only(top: 24),
+            child: DashBoardMobileLayout(),
+          ),
         ),
         SizedBox(
           width: 32,
@@ -27,5 +30,3 @@ class DashBoardTabletLayout extends StatelessWidget {
     );
   }
 }
-
-

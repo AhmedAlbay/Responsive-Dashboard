@@ -10,11 +10,8 @@ class AllExpenessAndQuickInoiveSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
-      child:  Column(
+      child: Column(
         children: [
-          SizedBox(
-            height: 40,
-          ),
           AllExpeness(),
           SizedBox(
             height: 24,
