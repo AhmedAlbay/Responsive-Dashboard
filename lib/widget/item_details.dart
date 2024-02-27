@@ -8,11 +8,20 @@ class ItemDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Container(width: 12,height: 12,decoration: ShapeDecoration(
-        color: incomeDetailsModel.color,
-        shape: const OvalBorder()),),
-        title: Text(incomeDetailsModel.title,style: AppStyle.styleRegular16,),
-        trailing: Text(incomeDetailsModel.value,style: AppStyle.styleMeduim16,),
+      leading: Container(
+        width: 12,
+        height: 12,
+        decoration: ShapeDecoration(
+            color: incomeDetailsModel.color, shape: const OvalBorder()),
+      ),
+      title: Text(
+        incomeDetailsModel.title,
+        style: AppStyle.styleRegular16(context),
+      ),
+      trailing: Text(
+        incomeDetailsModel.value,
+        style: AppStyle.styleMedium16(context),
+      ),
     );
   }
 }

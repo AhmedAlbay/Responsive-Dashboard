@@ -49,7 +49,7 @@ class _AllExpenessItemListViewState extends State<AllExpenessItemListView> {
                 });
               },
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: AllExpenessItem(
                     isSelected: selectIndex == index,
                     allExpenessItemModel: items),
@@ -65,8 +65,8 @@ class _AllExpenessItemListViewState extends State<AllExpenessItemListView> {
                 });
               },
               child: AllExpenessItem(
-                    isSelected: selectIndex == index,
-                    allExpenessItemModel: items),
+                  isSelected: selectIndex == index,
+                  allExpenessItemModel: items),
             ),
           );
         }

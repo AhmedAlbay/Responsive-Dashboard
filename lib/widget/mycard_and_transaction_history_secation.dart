@@ -16,7 +16,7 @@ class MyCardAndTransactionHistorySection extends StatelessWidget {
           height: 40,
           color: Color(0xffF1F1F1),
         ),
-        TransactionHistory(),
+           TransactionHistory(),
       ],
     ));
   }

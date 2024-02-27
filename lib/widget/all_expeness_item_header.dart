@@ -3,9 +3,13 @@ import 'package:flutter_svg/svg.dart';
 
 class AllExpenessItemHeader extends StatelessWidget {
   const AllExpenessItemHeader(
-      {super.key, required this.image, this.imageBackground, this.imagecolor, this.iconcolor});
+      {super.key,
+      required this.image,
+      this.imageBackground,
+      this.imagecolor,
+      this.iconcolor});
   final String image;
-  final Color? imageBackground, imagecolor ,iconcolor;
+  final Color? imageBackground, imagecolor, iconcolor;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -25,11 +29,13 @@ class AllExpenessItemHeader extends StatelessWidget {
           )),
         ),
         const Spacer(),
-        Transform.rotate(
-          angle: -1.57079633 * 2,
-          child:  Icon(
-            Icons.arrow_back_ios_new_outlined,
-            color:iconcolor??  const Color(0xff064060),
+        Expanded(
+          child: Transform.rotate(
+            angle: -1.57079633 * 2,
+            child: Icon(
+              Icons.arrow_back_ios_new_outlined,
+              color: iconcolor ?? const Color(0xff064060),
+            ),
           ),
         ),
       ],

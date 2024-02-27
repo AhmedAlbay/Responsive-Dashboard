@@ -34,21 +34,21 @@ class InActiveAllExpenessItem extends StatelessWidget {
           const SizedBox(height: 34),
           Text(
             allExpenessItemModel.title,
-            style: AppStyle.styleMeduim16,
+            style: AppStyle.styleMedium16(context),
           ),
           const SizedBox(
             height: 8,
           ),
           Text(
             allExpenessItemModel.date,
-            style: AppStyle.styleRegular14,
+            style: AppStyle.styleRegular14(context),
           ),
           const SizedBox(
             height: 16,
           ),
           Text(
             allExpenessItemModel.price,
-            style: AppStyle.styleSemiBold24,
+            style: AppStyle.styleSemiBold24(context),
           ),
         ],
       ),
@@ -90,13 +90,13 @@ class ActiveAllExpenessItem extends StatelessWidget {
           const SizedBox(height: 34),
           Text(
             allExpenessItemModel.title,
-            style: AppStyle.styleMeduim16.copyWith(color: Colors.white),
+            style: AppStyle.styleMedium16(context).copyWith(color: Colors.white),
           ),
           const SizedBox(
             height: 8,
           ),
           Text(allExpenessItemModel.date,
-              style: AppStyle.styleRegular14.copyWith(
+              style: AppStyle.styleRegular14(context).copyWith(
                 color: const Color.fromRGBO(250, 250, 250, 1),
               )),
           const SizedBox(
@@ -104,7 +104,7 @@ class ActiveAllExpenessItem extends StatelessWidget {
           ),
           Text(
             allExpenessItemModel.price,
-            style: AppStyle.styleSemiBold24.copyWith(color: Colors.white),
+            style: AppStyle.styleSemiBold24(context).copyWith(color: Colors.white),
           ),
         ],
       ),

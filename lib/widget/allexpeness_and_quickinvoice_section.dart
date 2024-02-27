@@ -9,16 +9,14 @@ class AllExpenessAndQuickInoiveSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
-      child: Column(
-        children: [
-          AllExpeness(),
-          SizedBox(
-            height: 24,
-          ),
-          QuickInvoice()
-        ],
-      ),
+    return const  Column(
+      children: [
+        AllExpeness(),
+        SizedBox(
+          height: 24,
+        ),
+        QuickInvoice()
+      ],
     );
   }
 }
