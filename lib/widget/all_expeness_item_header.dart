@@ -12,33 +12,39 @@ class AllExpenessItemHeader extends StatelessWidget {
   final Color? imageBackground, imagecolor, iconcolor;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Container(
-          width: 60,
-          height: 60,
-          decoration: ShapeDecoration(
-            shape: const OvalBorder(),
-            color: imageBackground ?? const Color(0xffFAFAFA),
-          ),
-          child: Center(
-              child: SvgPicture.asset(
-            image,
-            colorFilter: ColorFilter.mode(
-                imagecolor ?? const Color(0xff4EB7F2), BlendMode.srcIn),
-          )),
-        ),
-        const Spacer(),
-        Expanded(
-          child: Transform.rotate(
-            angle: -1.57079633 * 2,
-            child: Icon(
-              Icons.arrow_back_ios_new_outlined,
-              color: iconcolor ?? const Color(0xff064060),
+    return Row(children: [
+      Flexible(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 60),
+          child: AspectRatio(
+            aspectRatio: 1,
+            child: Container(
+              width: 60,
+              height: 60,
+              decoration: ShapeDecoration(
+                shape: const OvalBorder(),
+                color: imageBackground ?? const Color(0xffFAFAFA),
+              ),
+              child: Center(
+                  child: SvgPicture.asset(
+                image,
+                colorFilter: ColorFilter.mode(
+                    imagecolor ?? const Color(0xff4EB7F2), BlendMode.srcIn),
+              )),
             ),
           ),
         ),
-      ],
-    );
+      ),
+      const Spacer(),
+      Expanded(
+        child: Transform.rotate(
+          angle: -1.57079633 * 2,
+          child: Icon(
+            Icons.arrow_back_ios_new_outlined,
+            color: iconcolor ?? const Color(0xff064060),
+          ),
+        ),
+      ),
+    ]);
   }
 }

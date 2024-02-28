@@ -32,23 +32,35 @@ class InActiveAllExpenessItem extends StatelessWidget {
             image: allExpenessItemModel.image,
           ),
           const SizedBox(height: 34),
-          Text(
-            allExpenessItemModel.title,
-            style: AppStyle.styleMedium16(context),
+          FittedBox(
+            
+            fit: BoxFit.scaleDown,
+            child: Text(
+              allExpenessItemModel.title,
+              style: AppStyle.styleMedium16(context),
+            ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(
-            allExpenessItemModel.date,
-            style: AppStyle.styleRegular14(context),
+          FittedBox(
+            
+            fit: BoxFit.scaleDown,
+            child: Text(
+              allExpenessItemModel.date,
+              style: AppStyle.styleRegular14(context),
+            ),
           ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            allExpenessItemModel.price,
-            style: AppStyle.styleSemiBold24(context),
+          FittedBox(
+            
+            fit: BoxFit.scaleDown,
+            child: Text(
+              allExpenessItemModel.price,
+              style: AppStyle.styleSemiBold24(context),
+            ),
           ),
         ],
       ),
@@ -88,23 +100,34 @@ class ActiveAllExpenessItem extends StatelessWidget {
             image: allExpenessItemModel.image,
           ),
           const SizedBox(height: 34),
-          Text(
-            allExpenessItemModel.title,
-            style: AppStyle.styleMedium16(context).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              allExpenessItemModel.title,
+              style: AppStyle.styleMedium16(context).copyWith(color: Colors.white),
+            ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(allExpenessItemModel.date,
-              style: AppStyle.styleRegular14(context).copyWith(
-                color: const Color.fromRGBO(250, 250, 250, 1),
-              )),
+          FittedBox(
+            
+            fit: BoxFit.scaleDown,
+            child: Text(allExpenessItemModel.date,
+                style: AppStyle.styleRegular14(context).copyWith(
+                  color: const Color.fromRGBO(250, 250, 250, 1),
+                )),
+          ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            allExpenessItemModel.price,
-            style: AppStyle.styleSemiBold24(context).copyWith(color: Colors.white),
+          FittedBox(
+            
+            fit: BoxFit.scaleDown,
+            child: Text(
+              allExpenessItemModel.price,
+              style: AppStyle.styleSemiBold24(context).copyWith(color: Colors.white),
+            ),
           ),
         ],
       ),
