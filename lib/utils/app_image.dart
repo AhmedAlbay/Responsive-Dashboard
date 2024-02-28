@@ -21,6 +21,10 @@ class Assets {
   /// assets/images/dashboard.svg
   static const String imagesDashboard = "assets/images/dashboard.svg";
 
+  /// Assets for imagesDesktop Layout
+  /// assets/images/Desktop Layout.png
+  static const String imagesDesktop Layout = "assets/images/Desktop Layout.png";
+
   /// Assets for imagesExpenses
   /// assets/images/expenses.svg
   static const String imagesExpenses = "assets/images/expenses.svg";
@@ -45,6 +49,10 @@ class Assets {
   /// assets/images/logout.svg
   static const String imagesLogout = "assets/images/logout.svg";
 
+  /// Assets for imagesMobile Layout
+  /// assets/images/Mobile Layout.png
+  static const String imagesMobile Layout = "assets/images/Mobile Layout.png";
+
   /// Assets for imagesSettings
   /// assets/images/settings.svg
   static const String imagesSettings = "assets/images/settings.svg";
@@ -52,6 +60,10 @@ class Assets {
   /// Assets for imagesStatistics
   /// assets/images/statistics.svg
   static const String imagesStatistics = "assets/images/statistics.svg";
+
+  /// Assets for imagesTablet Layout
+  /// assets/images/Tablet Layout.png
+  static const String imagesTablet Layout = "assets/images/Tablet Layout.png";
 
   /// Assets for imagesTransaction
   /// assets/images/transaction.svg
