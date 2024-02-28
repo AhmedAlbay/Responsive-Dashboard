@@ -51,7 +51,7 @@ class _AllExpenessItemListViewState extends State<AllExpenessItemListView> {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Expanded(
@@ -67,7 +67,7 @@ class _AllExpenessItemListViewState extends State<AllExpenessItemListView> {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Expanded(
