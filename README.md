@@ -6,7 +6,7 @@ A new Flutter project.
 
 "This project is a Responsive Dashboard Application designed to work on different devices, such as:
 
- -  Desktop [Tablet Layout.png]
+   ![Desktop] (Desktop Layout.png)
  -  Tablet 
  -  Mobile 
 
