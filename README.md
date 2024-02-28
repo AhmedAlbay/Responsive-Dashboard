@@ -11,10 +11,10 @@ A new Flutter project.
 
  -  Tablet 
     
-    ![Desktop](assets/images/Tablet_Layout.png)
+    ![Tablet](assets/images/Tablet_Layout.png)
  -  Mobile 
 
-    ![Desktop](assets/images/Mobile_Layout.png)
+    ![Mobile](assets/images/Mobile_Layout.png)
 
 
 

@@ -13,7 +13,7 @@ abstract class AppStyle {
 
   static TextStyle styleBold16(BuildContext context) {
     return TextStyle(
-      color:  Color(0xFF4EB7F2),
+      color:  const Color(0xFF4EB7F2),
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w700,
